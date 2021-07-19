@@ -1,0 +1,290 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #ececf0;
+}
+
+#container #sideBar {
+  height: 100vh;
+  width: 10%;
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#container #sideBar #logo {
+  height: 60px;
+  position: relative;
+  top: 20px;
+}
+
+#container #sideBar #logo img {
+  height: 60px;
+}
+
+#sideBar #socialIcons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 32%;
+}
+
+#sideBar #socialIcons i {
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  color: #ececf0;
+  margin: 15px 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#sideBar #socialIcons i:hover {
+  color: #b30711;
+  background: #ececf0;
+}
+
+#sideBar #search {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2%;
+}
+
+#sideBar #search i {
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  margin: 15px 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ececf0;
+  color: #b30711;
+}
+
+#navbar {
+  position: absolute;
+  top: 20px;
+  left: 13%;
+  width: 60px;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar ul li {
+  height: 50px;
+  width: auto;
+  margin: 0 60px;
+  line-height: 50px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #b30711;
+}
+
+#navbar ul .active {
+  background: #b30711;
+  padding: 0 20px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+#navbar ul .active a {
+  color: #ececf0;
+  font-weight: 800;
+}
+
+#bars {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  right: 5%;
+}
+
+#bars .lines {
+  height: 7px;
+  width: 60px;
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  border-radius: 50px;
+  margin: 6px 0px;
+}
+
+#bars .lines:nth-child(2) {
+  margin: 0 0 0 15px;
+}
+
+#container #aSide {
+  height: 500px;
+  width: 750px;
+  position: absolute;
+  top: 30%;
+  right: 6%;
+  z-index: 2;
+}
+
+#container #showImg {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: -100px;
+  border-radius: 50%;
+  transform: rotateZ(-25deg);
+  background: linear-gradient(to top, #8c0a0b 40%, #ff001c);
+  transition: 1s;
+}
+
+#container #aSide img {
+  height: 500px;
+  width: 750px;
+  transition: 1s;
+}
+
+#container #aSide:hover img {
+  transform: rotateZ(45deg);
+}
+
+#container #aSide:hover #showImg {
+  transform: scale(0.90);
+}
+
+#content {
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+#content h2 {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+#content h2 b {
+  color: #b30711;
+  font-weight: 900;
+}
+
+#content p {
+  font-size: 18px;
+  color: #d40410;
+}
+
+#shopButtons button {
+  height: 60px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  color: #ececf0;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+#shopButtons button:hover {
+  background: transparent;
+  color: #f3011b;
+  border: 3px solid #ff001c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#shopButtons #offer {
+  margin: 0 0 0 50px;
+  background: transparent;
+  color: #f3011b;
+  border: 3px solid #ff001c;
+}
+
+#shopButtons #offer:hover {
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  color: #ececf0;
+  border: none;
+}
+
+#post {
+  height: 120px;
+  width: 310px;
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  border-radius: 20px 0px 0px 0px;
+}
+
+#post h2,
+i {
+  font-size: 30px;
+  margin: 0 5px;
+  color: #ececf0;
+}
+
+span {
+  display: block;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8%;
+  left: 36%;
+  background: linear-gradient(to top, #8c0a0b, #ff001c);
+  animation: animate 7s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  75%,
+  100% {
+      transform: scale(1);
+  }
+
+  25%,
+  50% {
+      transform: scale(0);
+  }
+}
